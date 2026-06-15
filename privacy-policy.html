@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Quyền Riêng Tư - AI TREND</title>
+    <meta name="description" content="Chính sách quyền riêng tư của ứng dụng AI TREND - Tạo video ngắn tự động bằng AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-light: #A29BFE;
+            --accent: #00D2D3;
+            --bg-dark: #0A0A1A;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --text-primary: #F0F0F5;
+            --text-secondary: #9B9BB4;
+            --border: rgba(255, 255, 255, 0.08);
+            --gradient-1: linear-gradient(135deg, #6C5CE7, #00D2D3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            background: rgba(10, 10, 26, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 40px; height: 40px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        /* Page Content */
+        .page-header {
+            padding: 140px 40px 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .page-header .gradient-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-header .date {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 48px;
+        }
+
+        .content-card h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--primary-light);
+        }
+
+        .content-card h2:first-child {
+            margin-top: 0;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        .content-card ul {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        .content-card li {
+            margin-bottom: 8px;
+        }
+
+        .content-card strong {
+            color: var(--text-primary);
+        }
+
+        .info-box {
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .info-box p {
+            color: var(--primary-light);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px;
+            border-top: 1px solid var(--border);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links-inline {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links-inline a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links-inline a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-copy {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .page-header { padding: 120px 20px 40px; }
+            .content { padding: 0 20px 60px; }
+            .content-card { padding: 32px 24px; }
+            footer { padding: 30px 20px; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">AI</div>
+                <span class="logo-text">AI TREND</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="privacy-policy.html" class="active">Quyền riêng tư</a></li>
+                <li><a href="terms-of-service.html">Điều khoản</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Chính Sách <span class="gradient-text">Quyền Riêng Tư</span></h1>
+            <p class="date">Cập nhật lần cuối: 15/06/2026</p>
+        </div>
+
+        <div class="content">
+            <div class="content-card">
+                <h2>1. Giới thiệu</h2>
+                <p>Chính sách quyền riêng tư này mô tả cách <strong>AI TREND</strong> ("chúng tôi", "ứng dụng") thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng dịch vụ của chúng tôi.</p>
+                <p>AI TREND là ứng dụng tạo video ngắn tự động bằng trí tuệ nhân tạo và đăng tải lên các nền tảng mạng xã hội bao gồm TikTok, YouTube, Facebook và Zalo.</p>
+
+                <h2>2. Thông tin chúng tôi thu thập</h2>
+                <p>Khi bạn sử dụng AI TREND, chúng tôi có thể thu thập các loại thông tin sau:</p>
+                <ul>
+                    <li><strong>Thông tin tài khoản mạng xã hội:</strong> Khi bạn kết nối tài khoản TikTok, YouTube, Facebook hoặc Zalo, chúng tôi thu thập token xác thực để thực hiện đăng tải nội dung. Chúng tôi không lưu trữ mật khẩu của bạn.</li>
+                    <li><strong>Nội dung video:</strong> Các video, hình ảnh, kịch bản và âm thanh được tạo tự động bởi AI trong quá trình sử dụng ứng dụng.</li>
+                    <li><strong>Dữ liệu sử dụng:</strong> Thông tin về cách bạn sử dụng ứng dụng để cải thiện trải nghiệm người dùng.</li>
+                </ul>
+
+                <h2>3. Cách chúng tôi sử dụng thông tin</h2>
+                <p>Chúng tôi sử dụng thông tin thu thập được cho các mục đích sau:</p>
+                <ul>
+                    <li>Tạo và đăng tải video lên các nền tảng mạng xã hội theo yêu cầu của bạn</li>
+                    <li>Quản lý nội dung trên các tài khoản mạng xã hội được kết nối</li>
+                    <li>Phân tích xu hướng để đề xuất nội dung phù hợp</li>
+                    <li>Cải thiện chất lượng dịch vụ và trải nghiệm người dùng</li>
+                </ul>
+
+                <div class="info-box">
+                    <p>⚡ <strong>Lưu ý:</strong> Chúng tôi chỉ truy cập vào các tài khoản mạng xã hội mà bạn đã cấp quyền rõ ràng và chỉ thực hiện các hành động mà bạn đã cho phép.</p>
+                </div>
+
+                <h2>4. Quyền truy cập TikTok</h2>
+                <p>Khi kết nối với TikTok, AI TREND yêu cầu các quyền sau:</p>
+                <ul>
+                    <li><strong>video.publish:</strong> Đăng tải video lên tài khoản TikTok của bạn</li>
+                    <li><strong>user.info.basic:</strong> Đọc thông tin cơ bản của tài khoản để xác thực</li>
+                </ul>
+                <p>Bạn có thể thu hồi quyền truy cập bất cứ lúc nào thông qua cài đặt TikTok của mình.</p>
+
+                <h2>5. Quyền truy cập YouTube</h2>
+                <p>Khi kết nối với YouTube, AI TREND sử dụng YouTube Data API v3 với các quyền:</p>
+                <ul>
+                    <li><strong>youtube.upload:</strong> Đăng tải video lên kênh YouTube của bạn</li>
+                    <li><strong>youtube.readonly:</strong> Đọc thông tin kênh để hiển thị trạng thái</li>
+                </ul>
+
+                <h2>6. Quyền truy cập Facebook</h2>
+                <p>Khi kết nối với Facebook, AI TREND yêu cầu các quyền:</p>
+                <ul>
+                    <li><strong>pages_manage_posts:</strong> Đăng tải nội dung lên Facebook Page</li>
+                    <li><strong>pages_show_list:</strong> Hiển thị danh sách Page bạn quản lý</li>
+                    <li><strong>pages_read_engagement:</strong> Đọc dữ liệu tương tác để phân tích hiệu quả</li>
+                </ul>
+
+                <h2>7. Chia sẻ thông tin với bên thứ ba</h2>
+                <p>Chúng tôi <strong>không bán, cho thuê hoặc chia sẻ</strong> thông tin cá nhân của bạn với bên thứ ba, ngoại trừ:</p>
+                <ul>
+                    <li>Các nền tảng mạng xã hội mà bạn đã cấp quyền (TikTok, YouTube, Facebook, Zalo) để thực hiện đăng tải</li>
+                    <li>Khi được yêu cầu bởi pháp luật hoặc cơ quan có thẩm quyền</li>
+                </ul>
+
+                <h2>8. Lưu trữ và bảo mật dữ liệu</h2>
+                <p>Chúng tôi áp dụng các biện pháp bảo mật kỹ thuật và tổ chức phù hợp để bảo vệ thông tin của bạn:</p>
+                <ul>
+                    <li>Token xác thực được mã hóa và lưu trữ an toàn trên máy chủ</li>
+                    <li>Tất cả giao tiếp API sử dụng kết nối HTTPS được mã hóa</li>
+                    <li>Dữ liệu được lưu trữ tạm thời và xóa sau khi hoàn thành quy trình</li>
+                </ul>
+
+                <h2>9. Quyền của bạn</h2>
+                <p>Bạn có các quyền sau đối với thông tin của mình:</p>
+                <ul>
+                    <li><strong>Quyền truy cập:</strong> Yêu cầu xem thông tin chúng tôi lưu trữ về bạn</li>
+                    <li><strong>Quyền xóa:</strong> Yêu cầu xóa toàn bộ dữ liệu liên quan đến tài khoản của bạn</li>
+                    <li><strong>Quyền thu hồi:</strong> Thu hồi quyền truy cập vào tài khoản mạng xã hội bất cứ lúc nào</li>
+                    <li><strong>Quyền phản đối:</strong> Phản đối việc xử lý dữ liệu cho các mục đích cụ thể</li>
+                </ul>
+
+                <h2>10. Thay đổi chính sách</h2>
+                <p>Chúng tôi có thể cập nhật chính sách này theo thời gian. Mọi thay đổi quan trọng sẽ được thông báo trên trang web này. Chúng tôi khuyến khích bạn kiểm tra trang này định kỳ.</p>
+
+                <h2>11. Liên hệ</h2>
+                <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng liên hệ:</p>
+                <ul>
+                    <li><strong>Email:</strong> htvinh1212@gmail.com</li>
+                    <li><strong>Ứng dụng:</strong> AI TREND</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-copy">&copy; 2026 AI TREND. All rights reserved.</span>
+            <ul class="footer-links-inline">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="privacy-policy.html">Quyền riêng tư</a></li>
+                <li><a href="terms-of-service.html">Điều khoản</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

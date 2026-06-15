@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điều Khoản Dịch Vụ - AI TREND</title>
+    <meta name="description" content="Điều khoản dịch vụ của ứng dụng AI TREND - Tạo video ngắn tự động bằng AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-light: #A29BFE;
+            --accent: #00D2D3;
+            --bg-dark: #0A0A1A;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --text-primary: #F0F0F5;
+            --text-secondary: #9B9BB4;
+            --border: rgba(255, 255, 255, 0.08);
+            --gradient-1: linear-gradient(135deg, #6C5CE7, #00D2D3);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            background: rgba(10, 10, 26, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo-icon {
+            width: 40px; height: 40px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        /* Page Content */
+        .page-header {
+            padding: 140px 40px 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .page-header .gradient-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-header .date {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px 100px;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 48px;
+        }
+
+        .content-card h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--primary-light);
+        }
+
+        .content-card h2:first-child {
+            margin-top: 0;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        .content-card ul, .content-card ol {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        .content-card li {
+            margin-bottom: 8px;
+        }
+
+        .content-card strong {
+            color: var(--text-primary);
+        }
+
+        .warning-box {
+            background: rgba(228, 77, 144, 0.1);
+            border: 1px solid rgba(228, 77, 144, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .warning-box p {
+            color: #E44D90;
+            margin: 0;
+        }
+
+        .info-box {
+            background: rgba(108, 92, 231, 0.1);
+            border: 1px solid rgba(108, 92, 231, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .info-box p {
+            color: var(--primary-light);
+            margin: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px;
+            border-top: 1px solid var(--border);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links-inline {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links-inline a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links-inline a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-copy {
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .page-header { padding: 120px 20px 40px; }
+            .content { padding: 0 20px 60px; }
+            .content-card { padding: 32px 24px; }
+            footer { padding: 30px 20px; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">AI</div>
+                <span class="logo-text">AI TREND</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="privacy-policy.html">Quyền riêng tư</a></li>
+                <li><a href="terms-of-service.html" class="active">Điều khoản</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Điều Khoản <span class="gradient-text">Dịch Vụ</span></h1>
+            <p class="date">Cập nhật lần cuối: 15/06/2026</p>
+        </div>
+
+        <div class="content">
+            <div class="content-card">
+                <h2>1. Giới thiệu</h2>
+                <p>Chào mừng bạn đến với <strong>AI TREND</strong>. Bằng việc sử dụng ứng dụng của chúng tôi, bạn đồng ý tuân thủ các điều khoản dịch vụ được nêu dưới đây. Vui lòng đọc kỹ trước khi sử dụng.</p>
+                <p>AI TREND là ứng dụng tạo video ngắn tự động bằng trí tuệ nhân tạo (AI) và đăng tải lên các nền tảng mạng xã hội bao gồm TikTok, YouTube, Facebook và Zalo.</p>
+
+                <h2>2. Mô tả dịch vụ</h2>
+                <p>AI TREND cung cấp các dịch vụ sau:</p>
+                <ul>
+                    <li>Tự động phân tích xu hướng và tạo kịch bản video bằng AI</li>
+                    <li>Sinh hình ảnh và video clip tự động từ kịch bản</li>
+                    <li>Chuyển văn bản thành giọng nói (Text-to-Speech)</li>
+                    <li>Ghép video hoàn chỉnh với hình ảnh, âm thanh, phụ đề và nhạc nền</li>
+                    <li>Tự động đăng tải video lên TikTok, YouTube, Facebook và Zalo</li>
+                    <li>Lên lịch đăng bài theo khung giờ tối ưu</li>
+                </ul>
+
+                <h2>3. Điều kiện sử dụng</h2>
+                <p>Để sử dụng AI TREND, bạn cần đáp ứng các điều kiện sau:</p>
+                <ul>
+                    <li>Bạn phải từ <strong>18 tuổi</strong> trở lên hoặc có sự đồng ý của phụ huynh</li>
+                    <li>Bạn phải sở hữu hoặc có quyền quản lý các tài khoản mạng xã hội được kết nối</li>
+                    <li>Bạn đồng ý cung cấp thông tin chính xác và cập nhật</li>
+                    <li>Bạn chịu trách nhiệm bảo mật thông tin tài khoản của mình</li>
+                </ul>
+
+                <h2>4. Quyền và trách nhiệm của người dùng</h2>
+                <p><strong>Bạn có quyền:</strong></p>
+                <ul>
+                    <li>Sử dụng dịch vụ để tạo và đăng tải video hợp pháp</li>
+                    <li>Kết nối và ngắt kết nối tài khoản mạng xã hội bất cứ lúc nào</li>
+                    <li>Yêu cầu xóa dữ liệu của mình khỏi hệ thống</li>
+                    <li>Tùy chỉnh nội dung, lịch đăng bài và cài đặt theo nhu cầu</li>
+                </ul>
+                <p><strong>Bạn có trách nhiệm:</strong></p>
+                <ul>
+                    <li>Tuân thủ điều khoản sử dụng của các nền tảng mạng xã hội liên quan (TikTok, YouTube, Facebook, Zalo)</li>
+                    <li>Không sử dụng dịch vụ để tạo hoặc phát tán nội dung vi phạm pháp luật</li>
+                    <li>Không tạo nội dung spam, lừa đảo hoặc gây hiểu lầm</li>
+                    <li>Bảo mật thông tin đăng nhập và token xác thực</li>
+                </ul>
+
+                <div class="warning-box">
+                    <p>⚠️ <strong>Cảnh báo:</strong> Việc sử dụng AI TREND để tạo nội dung vi phạm pháp luật, bao gồm nhưng không giới hạn ở: nội dung bạo lực, phân biệt đối xử, xâm phạm quyền sở hữu trí tuệ hoặc thông tin sai lệch, sẽ dẫn đến chấm dứt tài khoản ngay lập tức.</p>
+                </div>
+
+                <h2>5. Nội dung bị cấm</h2>
+                <p>Bạn <strong>không được</strong> sử dụng AI TREND để tạo hoặc đăng tải các nội dung sau:</p>
+                <ul>
+                    <li>Nội dung khiêu dâm, bạo lực hoặc đồ họa gây sốc</li>
+                    <li>Nội dung phân biệt chủng tộc, giới tính, tôn giáo hoặc bất kỳ hình thức phân biệt nào</li>
+                    <li>Thông tin sai lệch hoặc tin giả</li>
+                    <li>Nội dung xâm phạm quyền sở hữu trí tuệ của người khác</li>
+                    <li>Spam hoặc nội dung quảng cáo lừa đảo</li>
+                    <li>Nội dung vi phạm pháp luật Việt Nam và quốc tế</li>
+                    <li>Nội dung liên quan đến chính trị nhạy cảm</li>
+                </ul>
+
+                <h2>6. Sở hữu trí tuệ</h2>
+                <p><strong>Nội dung do AI tạo:</strong> Video, hình ảnh, kịch bản và âm thanh được tạo bởi AI TREND thuộc quyền sở hữu của bạn. Bạn có toàn quyền sử dụng, phân phối và chỉnh sửa nội dung này.</p>
+                <p><strong>Ứng dụng AI TREND:</strong> Mã nguồn, thiết kế, thương hiệu và công nghệ của AI TREND thuộc quyền sở hữu của chúng tôi và được bảo vệ bởi luật sở hữu trí tuệ.</p>
+
+                <h2>7. Tích hợp nền tảng bên thứ ba</h2>
+                <p>AI TREND tích hợp với các nền tảng bên thứ ba thông qua API chính thức:</p>
+                <ul>
+                    <li><strong>TikTok:</strong> Sử dụng TikTok Content Posting API v2</li>
+                    <li><strong>YouTube:</strong> Sử dụng YouTube Data API v3</li>
+                    <li><strong>Facebook:</strong> Sử dụng Facebook Graph API v21.0</li>
+                    <li><strong>Zalo:</strong> Sử dụng Zalo OA API v2.0</li>
+                </ul>
+                <p>Việc sử dụng các nền tảng này cũng phải tuân thủ điều khoản dịch vụ riêng của từng nền tảng.</p>
+
+                <div class="info-box">
+                    <p>ℹ️ <strong>Lưu ý:</strong> AI TREND không chịu trách nhiệm về các thay đổi trong API hoặc chính sách của các nền tảng bên thứ ba có thể ảnh hưởng đến dịch vụ.</p>
+                </div>
+
+                <h2>8. Giới hạn trách nhiệm</h2>
+                <p>AI TREND được cung cấp trên cơ sở "nguyên trạng" (as-is). Chúng tôi không đảm bảo:</p>
+                <ul>
+                    <li>Dịch vụ sẽ hoạt động liên tục, không gián đoạn</li>
+                    <li>Nội dung do AI tạo sẽ luôn chính xác và phù hợp</li>
+                    <li>Video đăng tải sẽ đạt được lượt xem hoặc tương tác cụ thể</li>
+                    <li>Khả năng tương thích với tất cả các thay đổi tương lai của nền tảng bên thứ ba</li>
+                </ul>
+
+                <h2>9. Chấm dứt dịch vụ</h2>
+                <p>Chúng tôi có quyền chấm dứt hoặc tạm ngưng tài khoản của bạn nếu:</p>
+                <ul>
+                    <li>Vi phạm các điều khoản dịch vụ này</li>
+                    <li>Sử dụng dịch vụ cho mục đích bất hợp pháp</li>
+                    <li>Tạo nội dung vi phạm chính sách nội dung</li>
+                    <li>Cố gắng phá hoại hoặc can thiệp vào hệ thống</li>
+                </ul>
+                <p>Bạn cũng có quyền ngừng sử dụng dịch vụ bất cứ lúc nào bằng cách ngắt kết nối tài khoản mạng xã hội và ngừng sử dụng ứng dụng.</p>
+
+                <h2>10. Thay đổi điều khoản</h2>
+                <p>Chúng tôi có quyền cập nhật các điều khoản này theo thời gian. Khi có thay đổi quan trọng, chúng tôi sẽ thông báo trên trang web. Việc tiếp tục sử dụng dịch vụ sau khi thay đổi được đăng tải đồng nghĩa với việc bạn chấp nhận các điều khoản mới.</p>
+
+                <h2>11. Luật áp dụng</h2>
+                <p>Các điều khoản này được điều chỉnh bởi pháp luật <strong>Việt Nam</strong>. Mọi tranh chấp phát sinh sẽ được giải quyết tại tòa án có thẩm quyền tại Việt Nam.</p>
+
+                <h2>12. Liên hệ</h2>
+                <p>Nếu bạn có bất kỳ câu hỏi nào về điều khoản dịch vụ này, vui lòng liên hệ:</p>
+                <ul>
+                    <li><strong>Email:</strong> htvinh1212@gmail.com</li>
+                    <li><strong>Ứng dụng:</strong> AI TREND</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-copy">&copy; 2026 AI TREND. All rights reserved.</span>
+            <ul class="footer-links-inline">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="privacy-policy.html">Quyền riêng tư</a></li>
+                <li><a href="terms-of-service.html">Điều khoản</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
